@@ -38,18 +38,22 @@ const Navbar = () => {
           placeholder="search..."
         />
         <button type="button">search</button>
-        <ul className="ul">
-          {search.trim() ? (
-            handleSearch(data1)?.map((product) => (
-              <li key={product.id}>
-                {product.title}
-                <img src={product.images[0]} alt="" />
-              </li>
-            ))
-          ) : (
-            <></>
-          )}
-        </ul>
+        {search ? (
+          <ul>
+            {search.trim() ? (
+              handleSearch(data1)?.map((product) => (
+                <li key={product.id}>
+                  {product.title}
+                  <img src={product.images[0]} alt="" />
+                </li>
+              ))
+            ) : (
+              <></>
+            )}
+          </ul>
+        ) : (
+          <></>
+        )}
       </form>
       <div className="catalogs">
         <div className="catalog">
