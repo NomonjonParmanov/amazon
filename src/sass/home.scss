@@ -1,0 +1,112 @@
+.navbar {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fe2722;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  top: 0;
+  svg {
+    width: 200px;
+  }
+  .catalogs {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .catalog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    color: #fff;
+    background-color: #e81711;
+    width: 90px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 6px;
+    .like {
+      font-size: 20px;
+    }
+  }
+  form {
+    align-items: center;
+    input {
+      width: 700px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 10px;
+      border-radius: 20px;
+    }
+    button {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      width: 100px;
+      margin-left: -110px;
+      border-radius: 30px;
+      background-color: #bef550;
+      color: #18181d;
+      border: 1px solid #b2ed50;
+    }
+    ul {
+      display: block;
+      height: 100px;
+      overflow: auto;
+      background-color: #fff;
+      padding: 20px;
+      margin-left: 10px;
+      padding-top: 10px;
+      margin-top: 3px;
+      li {
+        display: block;
+        color: #000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid gray;
+        margin-top: 5px;
+        img {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+  }
+}
+
+.products {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+  padding-top: 30px;
+  .card {
+    border: 1px solid gray;
+    padding: 10px;
+    width: 216px;
+    height: 300px;
+    text-align: center;
+    img {
+      width: 216px;
+      height: 216px;
+      border-radius: 8px;
+      margin: 0 auto;
+      object-fit: contain;
+    }
+    h2 {
+      color: gray;
+      font-size: 20px;
+    }
+    h3 {
+      color: red;
+      font-size: 18px;
+    }
+    p {
+      color: gray;
+      text-decoration: line-through;
+      font-size: 16px;
+    }
+  }
+}
